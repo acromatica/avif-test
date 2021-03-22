@@ -19,7 +19,7 @@
   	left: 0;
   	right: 0;
   	height: 100px;
-  	background: linear-gradient(to bottom, red 10px, blue 10px, blue 20px, green 20px, green 30px, salmon 30px, salmon 40px, aliceblue 40px, aliceblue 50px, cyan 50px, cyan 60px, orange 60px, orange 70px, pink 70px, pink 80px, purple 80px, purple 90px, yellow 90px, yellow 100px);
+  	background: linear-gradient(to bottom, aliceblue 40px, red 40px, red 41px, blue 41px, blue 42px, green 42px, green 43px, salmon 43px, salmon 44px, aliceblue 44px, aliceblue 45px, cyan 45px, cyan 46px, orange 46px, orange 47px, pink 47px, pink 48px, purple 48px, purple 49px, yellow 49px, yellow 50px, oldlace 50px);
   	z-index: 10;
   }
   #testparam {
@@ -290,7 +290,7 @@
 				    tR = window.devicePixelRatio || 1;
 				const header = document.getElementById('header');
 
-				    document.getElementById('testparam').innerHTML = 'tH: ' + tH + '<br />' + ' HHH: ' + window.screen.height + '<br /> tW: ' + tW + '<br /> tR: ' + tR + '<br /> M: ' + navigator.userAgent.match(/instagram/i) + '<br />header.offsetTop: ' + header.offsetTop + '<br />w.pageYOffset: ' + window.pageYOffset;
+				    document.getElementById('testparam').innerHTML = 'tH: ' + tH + '<br />HHH: ' + window.screen.height + '<br />aH: ' + window.screen.availHeight + '<br /> tW: ' + tW + '<br /> tR: ' + tR + '<br /> M: ' + navigator.userAgent.match(/instagram/i) + '<br />header.offsetTop: ' + header.offsetTop + '<br />w.pageYOffset: ' + window.pageYOffset;
 			}
 
 			reportParams();
