@@ -283,6 +283,8 @@
 	    <p>
 	        Phasellus nec commodo metus. Integer varius, nisl sed mollis tristique, augue nisl fringilla massa, sit amet aliquet risus diam eget odio. Nullam euismod commodo quam non vehicula. Aliquam vulputate nisl a malesuada congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam ac ex ante. Nam arcu orci, hendrerit at sagittis eu, varius vel libero. Maecenas porta tellus ut pellentesque consequat.
 	    </p></div>
+	    <button onclick="myFunction()">Click me 0</button><br />
+	    <button onclick="myFunction1()">Click me 1</button><br />
 	    <script>
 			function reportParams() {
 				var tH = window.innerHeight,
@@ -305,6 +307,17 @@
 			reportParams();
 
 			window.onresize = reportParams;
+
+			function myFunction() {
+				window.scrollTo(0, 0);
+			}
+
+			function myFunction1() {
+				window.scrollTo(0, 0);
+				window.scrollTo(0, 1);
+			}
+
+
 
 			// setInterval(function(){ reportParams(); }, 3000);
 		</script>
