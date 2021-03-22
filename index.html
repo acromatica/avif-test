@@ -290,7 +290,15 @@
 				    tR = window.devicePixelRatio || 1;
 				const header = document.getElementById('header');
 
-				    document.getElementById('testparam').innerHTML = 'tH: ' + tH + '<br />HHH: ' + window.screen.height + '<br />aH: ' + window.screen.availHeight + '<br /> tW: ' + tW + '<br /> tR: ' + tR + '<br /> M: ' + navigator.userAgent.match(/instagram/i) + '<br />header.offsetTop: ' + header.offsetTop + '<br />w.pageYOffset: ' + window.pageYOffset;
+				    document.getElementById('testparam').innerHTML = 
+				    'tH: ' + tH + '<br />' +
+				    'HH: ' + window.screen.height + '<br />' + 
+				    'aH: ' + window.screen.availHeight + '<br />' +
+				    'tW: ' + tW + '<br />' +
+				    'tR: ' + tR + '<br />' +
+				    'MM: ' + navigator.userAgent.match(/instagram/i) + '<br />' +
+				    'header.offsetTop: ' + header.offsetTop + '<br />' + 
+				    'w.pageYOffset: ' + window.pageYOffset;
 			}
 
 			reportParams();
