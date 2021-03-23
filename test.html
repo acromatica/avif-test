@@ -209,7 +209,12 @@
 // 			window.onresize = reportParams;
 
 			function myFunction() {
-				window.scrollTo(0, window.pageYOffset + 200);
+				window.scroll({
+					top: window.pageYOffset + 100, 
+					left: 0, 
+					behavior: 'smooth'
+				});
+// 				window.scrollTo(0, );
 // 				setTimeout(function() {
 // 					window.scrollTo(0, -100);
 // 				}, 10);
