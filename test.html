@@ -142,7 +142,8 @@
 	        Phasellus nec commodo metus. Integer varius, nisl sed mollis tristique, augue nisl fringilla massa, sit amet aliquet risus diam eget odio. Nullam euismod commodo quam non vehicula. Aliquam vulputate nisl a malesuada congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam ac ex ante. Nam arcu orci, hendrerit at sagittis eu, varius vel libero. Maecenas porta tellus ut pellentesque consequat.
 	    </p></div>
 	    <button onclick="myFunction()">Click me 0</button><br /><br /><br />
-	    <button onclick="myFunction1()">Click me 1</button><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<button onclick="myFunction1()">Click me 1</button><br /><br /><br />
+	    <button onclick="myFunction2()">Click me 2</button><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 	    <script>
 			function reportParams() {
 				var tH = window.innerHeight,
@@ -174,7 +175,15 @@
 				window.scrollTo(0, 0);
 				window.scrollTo(0, 1);
 			}
-
+		    
+		    
+			function myFunction2() {
+				window.scroll({
+					top: 0, 
+					left: 0, 
+					behavior: 'smooth'
+				});
+			}
 		</script>
 </body>
 </html>
