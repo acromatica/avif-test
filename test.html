@@ -169,17 +169,23 @@
 
 			function myFunction() {
 				window.scrollTo(0, -100);
+				window.scrollTo(0, -1);
 			}
 
 			function myFunction1() {
-				window.scrollTo(0, -100);
-				window.scrollTo(0, 0);
+// 				window.scrollTo(0, -100);
+// 				window.scrollTo(0, 0);
 			}
 		    
 		    
 			function myFunction2() {
 				window.scroll({
 					top: -100, 
+					left: 0, 
+					behavior: 'smooth'
+				});
+				window.scroll({
+					top: -10, 
 					left: 0, 
 					behavior: 'smooth'
 				});
